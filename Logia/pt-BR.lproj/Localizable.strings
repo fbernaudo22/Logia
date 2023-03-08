@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  VoiceCare
+
+  Created by Carmine Cinquegrana on 01/03/23.
+  
+*/
+
+"hello" = "Visão geral do dia";
+"appointments" = "Compromissos";
+"patients" = "Pacientes";
+"exercises" = "Exercìsios";
+"medical records" = "Registros Médicos";
+"save" = "Salvar";
+"tags" = "Tag";
+"history sheet" = "Historico";
+"name" = "Nome";
+"surname" = "Sobrenome";
+"age" = "Idade";
+"address" = "Endereço";
+"phone number" = "Número de Telefone";
+"assessments" = "Avaliação";
+"dashboard" = "Hoje";
+"laryngitis" = "Laringite";
+"deformity" = "Deformidade";
+"injury" = "Ferimento";
+"dysphonia" = "Disfonia";
+"insert" = "inserir";

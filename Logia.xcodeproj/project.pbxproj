@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6860475329B50D3900F7C253 /* PatientsListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475229B50D3900F7C253 /* PatientsListRowView.swift */; };
+		6860475529B520C000F7C253 /* MenuItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475429B520C000F7C253 /* MenuItemsModel.swift */; };
+		6860475729B52DB500F7C253 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475629B52DB500F7C253 /* ExerciseDetailView.swift */; };
+		6860475929B52E3C00F7C253 /* ExerciseChoiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475829B52E3C00F7C253 /* ExerciseChoiceStore.swift */; };
+		6860475B29B52FDE00F7C253 /* ExerciseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475A29B52FDE00F7C253 /* ExerciseRowView.swift */; };
+		6860475D29B63F0000F7C253 /* ExercisesCategoryMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475C29B63F0000F7C253 /* ExercisesCategoryMenu.swift */; };
+		6860475F29B63F3900F7C253 /* CategoryChoiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860475E29B63F3900F7C253 /* CategoryChoiceStore.swift */; };
+		6860476129B77B0F00F7C253 /* CategoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860476029B77B0F00F7C253 /* CategoryRowView.swift */; };
+		6860476329B7956E00F7C253 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860476229B7956E00F7C253 /* AddExerciseView.swift */; };
+		688201E929AEAA4500C02DDD /* LogiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688201E829AEAA4500C02DDD /* LogiaApp.swift */; };
+		688201ED29AEAA4600C02DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688201EC29AEAA4600C02DDD /* Assets.xcassets */; };
+		688201F029AEAA4600C02DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688201EF29AEAA4600C02DDD /* Preview Assets.xcassets */; };
+		688201F229AEAA4600C02DDD /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688201F129AEAA4600C02DDD /* PersistenceController.swift */; };
+		688201F529AEAA4600C02DDD /* VoiceCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 688201F329AEAA4600C02DDD /* VoiceCare.xcdatamodeld */; };
+		688201FE29AEACC200C02DDD /* SidebarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688201FD29AEACC200C02DDD /* SidebarRowView.swift */; };
+		6882020029AEACD900C02DDD /* TagRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688201FF29AEACD900C02DDD /* TagRowView.swift */; };
+		6882020229AEAD0500C02DDD /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882020129AEAD0500C02DDD /* PlusButtonView.swift */; };
+		6882020429AEAD1900C02DDD /* PatientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882020329AEAD1900C02DDD /* PatientButtonView.swift */; };
+		6882020629AEAD5C00C02DDD /* Tagview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882020529AEAD5C00C02DDD /* Tagview.swift */; };
+		6882020829AEAE3600C02DDD /* TagsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882020729AEAE3600C02DDD /* TagsListView.swift */; };
+		6882020D29AEAF1F00C02DDD /* PatientsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882020C29AEAF1F00C02DDD /* PatientsStore.swift */; };
+		6882020F29AEAF3D00C02DDD /* DiseasesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882020E29AEAF3D00C02DDD /* DiseasesStore.swift */; };
+		6882021129AEAF4A00C02DDD /* ExercisesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021029AEAF4A00C02DDD /* ExercisesStore.swift */; };
+		6882021329AEAF5600C02DDD /* AssessmentsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021229AEAF5600C02DDD /* AssessmentsStore.swift */; };
+		6882021529AEAFD500C02DDD /* SidebarChoiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021429AEAFD500C02DDD /* SidebarChoiceStore.swift */; };
+		6882021729AEAFE500C02DDD /* PatientChoiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021629AEAFE500C02DDD /* PatientChoiceStore.swift */; };
+		6882021929AEB10200C02DDD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021829AEB10200C02DDD /* WelcomeView.swift */; };
+		6882021B29AEB10E00C02DDD /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021A29AEB10E00C02DDD /* SidebarView.swift */; };
+		6882021D29AEB11B00C02DDD /* PatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021C29AEB11B00C02DDD /* PatientView.swift */; };
+		6882021F29AEB13000C02DDD /* PatientCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882021E29AEB13000C02DDD /* PatientCollectionView.swift */; };
+		6882022129AEB14100C02DDD /* PatientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882022029AEB14100C02DDD /* PatientListView.swift */; };
+		6882022329AEB15500C02DDD /* PatientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882022229AEB15500C02DDD /* PatientDetailView.swift */; };
+		6882022529AEB18400C02DDD /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882022429AEB18400C02DDD /* ExercisesView.swift */; };
+		6882022729AEB5C200C02DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882022629AEB5C200C02DDD /* ContentView.swift */; };
+		DB28327829B2554100C41A22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB28327A29B2554100C41A22 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		685AE6B329AED510009CD6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6860475229B50D3900F7C253 /* PatientsListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsListRowView.swift; sourceTree = "<group>"; };
+		6860475429B520C000F7C253 /* MenuItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsModel.swift; sourceTree = "<group>"; };
+		6860475629B52DB500F7C253 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		6860475829B52E3C00F7C253 /* ExerciseChoiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseChoiceStore.swift; sourceTree = "<group>"; };
+		6860475A29B52FDE00F7C253 /* ExerciseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRowView.swift; sourceTree = "<group>"; };
+		6860475C29B63F0000F7C253 /* ExercisesCategoryMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesCategoryMenu.swift; sourceTree = "<group>"; };
+		6860475E29B63F3900F7C253 /* CategoryChoiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChoiceStore.swift; sourceTree = "<group>"; };
+		6860476029B77B0F00F7C253 /* CategoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRowView.swift; sourceTree = "<group>"; };
+		6860476229B7956E00F7C253 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		688201E529AEAA4500C02DDD /* Logia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		688201E829AEAA4500C02DDD /* LogiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogiaApp.swift; sourceTree = "<group>"; };
+		688201EC29AEAA4600C02DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		688201EF29AEAA4600C02DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		688201F129AEAA4600C02DDD /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		688201F429AEAA4600C02DDD /* VoiceCare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VoiceCare.xcdatamodel; sourceTree = "<group>"; };
+		688201FD29AEACC200C02DDD /* SidebarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarRowView.swift; sourceTree = "<group>"; };
+		688201FF29AEACD900C02DDD /* TagRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRowView.swift; sourceTree = "<group>"; };
+		6882020129AEAD0500C02DDD /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
+		6882020329AEAD1900C02DDD /* PatientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientButtonView.swift; sourceTree = "<group>"; };
+		6882020529AEAD5C00C02DDD /* Tagview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagview.swift; sourceTree = "<group>"; };
+		6882020729AEAE3600C02DDD /* TagsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsListView.swift; sourceTree = "<group>"; };
+		6882020C29AEAF1F00C02DDD /* PatientsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsStore.swift; sourceTree = "<group>"; };
+		6882020E29AEAF3D00C02DDD /* DiseasesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesStore.swift; sourceTree = "<group>"; };
+		6882021029AEAF4A00C02DDD /* ExercisesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesStore.swift; sourceTree = "<group>"; };
+		6882021229AEAF5600C02DDD /* AssessmentsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentsStore.swift; sourceTree = "<group>"; };
+		6882021429AEAFD500C02DDD /* SidebarChoiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarChoiceStore.swift; sourceTree = "<group>"; };
+		6882021629AEAFE500C02DDD /* PatientChoiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientChoiceStore.swift; sourceTree = "<group>"; };
+		6882021829AEB10200C02DDD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6882021A29AEB10E00C02DDD /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		6882021C29AEB11B00C02DDD /* PatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientView.swift; sourceTree = "<group>"; };
+		6882021E29AEB13000C02DDD /* PatientCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCollectionView.swift; sourceTree = "<group>"; };
+		6882022029AEB14100C02DDD /* PatientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListView.swift; sourceTree = "<group>"; };
+		6882022229AEB15500C02DDD /* PatientDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailView.swift; sourceTree = "<group>"; };
+		6882022429AEB18400C02DDD /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		6882022629AEB5C200C02DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB28327929B2554100C41A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DB8C949229B255F000E5F627 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DBB795DA29B2562100635DCA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		688201E229AEAA4500C02DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		688201DC29AEAA4500C02DDD = {
+			isa = PBXGroup;
+			children = (
+				688201E729AEAA4500C02DDD /* Logia */,
+				688201E629AEAA4500C02DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		688201E629AEAA4500C02DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				688201E529AEAA4500C02DDD /* Logia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		688201E729AEAA4500C02DDD /* Logia */ = {
+			isa = PBXGroup;
+			children = (
+				685AE6B329AED510009CD6AC /* Info.plist */,
+				688201FC29AEAA7A00C02DDD /* Components */,
+				688201FB29AEAA6B00C02DDD /* Core */,
+				688201E829AEAA4500C02DDD /* LogiaApp.swift */,
+				DB28327A29B2554100C41A22 /* Localizable.strings */,
+				688201EC29AEAA4600C02DDD /* Assets.xcassets */,
+				688201EE29AEAA4600C02DDD /* Preview Content */,
+			);
+			path = Logia;
+			sourceTree = "<group>";
+		};
+		688201EE29AEAA4600C02DDD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				688201EF29AEAA4600C02DDD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		688201FB29AEAA6B00C02DDD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6882020B29AEAE7200C02DDD /* Views */,
+				6882020A29AEAE6C00C02DDD /* ViewModels */,
+				6882020929AEAE6400C02DDD /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		688201FC29AEAA7A00C02DDD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				688201FD29AEACC200C02DDD /* SidebarRowView.swift */,
+				688201FF29AEACD900C02DDD /* TagRowView.swift */,
+				6882020129AEAD0500C02DDD /* PlusButtonView.swift */,
+				6882020329AEAD1900C02DDD /* PatientButtonView.swift */,
+				6882020529AEAD5C00C02DDD /* Tagview.swift */,
+				6882020729AEAE3600C02DDD /* TagsListView.swift */,
+				6860475229B50D3900F7C253 /* PatientsListRowView.swift */,
+				6860475A29B52FDE00F7C253 /* ExerciseRowView.swift */,
+				6860476029B77B0F00F7C253 /* CategoryRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6882020929AEAE6400C02DDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				688201F329AEAA4600C02DDD /* VoiceCare.xcdatamodeld */,
+				688201F129AEAA4600C02DDD /* PersistenceController.swift */,
+				6860475429B520C000F7C253 /* MenuItemsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6882020A29AEAE6C00C02DDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6882020C29AEAF1F00C02DDD /* PatientsStore.swift */,
+				6882020E29AEAF3D00C02DDD /* DiseasesStore.swift */,
+				6882021029AEAF4A00C02DDD /* ExercisesStore.swift */,
+				6882021229AEAF5600C02DDD /* AssessmentsStore.swift */,
+				6882021429AEAFD500C02DDD /* SidebarChoiceStore.swift */,
+				6882021629AEAFE500C02DDD /* PatientChoiceStore.swift */,
+				6860475829B52E3C00F7C253 /* ExerciseChoiceStore.swift */,
+				6860475E29B63F3900F7C253 /* CategoryChoiceStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6882020B29AEAE7200C02DDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6882021829AEB10200C02DDD /* WelcomeView.swift */,
+				6882021A29AEB10E00C02DDD /* SidebarView.swift */,
+				6882021C29AEB11B00C02DDD /* PatientView.swift */,
+				6882021E29AEB13000C02DDD /* PatientCollectionView.swift */,
+				6882022029AEB14100C02DDD /* PatientListView.swift */,
+				6882022229AEB15500C02DDD /* PatientDetailView.swift */,
+				6882022429AEB18400C02DDD /* ExercisesView.swift */,
+				6882022629AEB5C200C02DDD /* ContentView.swift */,
+				6860475629B52DB500F7C253 /* ExerciseDetailView.swift */,
+				6860475C29B63F0000F7C253 /* ExercisesCategoryMenu.swift */,
+				6860476229B7956E00F7C253 /* AddExerciseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		688201E429AEAA4500C02DDD /* Logia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688201F829AEAA4600C02DDD /* Build configuration list for PBXNativeTarget "Logia" */;
+			buildPhases = (
+				688201E129AEAA4500C02DDD /* Sources */,
+				688201E229AEAA4500C02DDD /* Frameworks */,
+				688201E329AEAA4500C02DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logia;
+			productName = VoiceCare;
+			productReference = 688201E529AEAA4500C02DDD /* Logia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		688201DD29AEAA4500C02DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					688201E429AEAA4500C02DDD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 688201E029AEAA4500C02DDD /* Build configuration list for PBXProject "Logia" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+				"pt-BR",
+			);
+			mainGroup = 688201DC29AEAA4500C02DDD;
+			productRefGroup = 688201E629AEAA4500C02DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				688201E429AEAA4500C02DDD /* Logia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		688201E329AEAA4500C02DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688201F029AEAA4600C02DDD /* Preview Assets.xcassets in Resources */,
+				DB28327829B2554100C41A22 /* Localizable.strings in Resources */,
+				688201ED29AEAA4600C02DDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		688201E129AEAA4500C02DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6882021729AEAFE500C02DDD /* PatientChoiceStore.swift in Sources */,
+				6882020229AEAD0500C02DDD /* PlusButtonView.swift in Sources */,
+				6882021129AEAF4A00C02DDD /* ExercisesStore.swift in Sources */,
+				6860475729B52DB500F7C253 /* ExerciseDetailView.swift in Sources */,
+				6882021D29AEB11B00C02DDD /* PatientView.swift in Sources */,
+				6882020829AEAE3600C02DDD /* TagsListView.swift in Sources */,
+				6882022329AEB15500C02DDD /* PatientDetailView.swift in Sources */,
+				6882020D29AEAF1F00C02DDD /* PatientsStore.swift in Sources */,
+				6882021F29AEB13000C02DDD /* PatientCollectionView.swift in Sources */,
+				6882021B29AEB10E00C02DDD /* SidebarView.swift in Sources */,
+				6882021929AEB10200C02DDD /* WelcomeView.swift in Sources */,
+				6860475B29B52FDE00F7C253 /* ExerciseRowView.swift in Sources */,
+				6860476329B7956E00F7C253 /* AddExerciseView.swift in Sources */,
+				688201F229AEAA4600C02DDD /* PersistenceController.swift in Sources */,
+				6860476129B77B0F00F7C253 /* CategoryRowView.swift in Sources */,
+				6860475329B50D3900F7C253 /* PatientsListRowView.swift in Sources */,
+				6882020029AEACD900C02DDD /* TagRowView.swift in Sources */,
+				688201FE29AEACC200C02DDD /* SidebarRowView.swift in Sources */,
+				6860475F29B63F3900F7C253 /* CategoryChoiceStore.swift in Sources */,
+				6882020629AEAD5C00C02DDD /* Tagview.swift in Sources */,
+				6860475929B52E3C00F7C253 /* ExerciseChoiceStore.swift in Sources */,
+				6882021529AEAFD500C02DDD /* SidebarChoiceStore.swift in Sources */,
+				6882021329AEAF5600C02DDD /* AssessmentsStore.swift in Sources */,
+				6882022129AEB14100C02DDD /* PatientListView.swift in Sources */,
+				6882022729AEB5C200C02DDD /* ContentView.swift in Sources */,
+				6882022529AEB18400C02DDD /* ExercisesView.swift in Sources */,
+				6882020F29AEAF3D00C02DDD /* DiseasesStore.swift in Sources */,
+				6860475529B520C000F7C253 /* MenuItemsModel.swift in Sources */,
+				6860475D29B63F0000F7C253 /* ExercisesCategoryMenu.swift in Sources */,
+				688201E929AEAA4500C02DDD /* LogiaApp.swift in Sources */,
+				6882020429AEAD1900C02DDD /* PatientButtonView.swift in Sources */,
+				688201F529AEAA4600C02DDD /* VoiceCare.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB28327A29B2554100C41A22 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB28327929B2554100C41A22 /* en */,
+				DB8C949229B255F000E5F627 /* it */,
+				DBB795DA29B2562100635DCA /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		688201F629AEAA4600C02DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		688201F729AEAA4600C02DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		688201F929AEAA4600C02DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Logia/Preview Content\"";
+				DEVELOPMENT_TEAM = T3577S6M37;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Logia/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancescoBernaudo.Logia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		688201FA29AEAA4600C02DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Logia/Preview Content\"";
+				DEVELOPMENT_TEAM = T3577S6M37;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Logia/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancescoBernaudo.Logia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		688201E029AEAA4500C02DDD /* Build configuration list for PBXProject "Logia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688201F629AEAA4600C02DDD /* Debug */,
+				688201F729AEAA4600C02DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688201F829AEAA4600C02DDD /* Build configuration list for PBXNativeTarget "Logia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688201F929AEAA4600C02DDD /* Debug */,
+				688201FA29AEAA4600C02DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		688201F329AEAA4600C02DDD /* VoiceCare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				688201F429AEAA4600C02DDD /* VoiceCare.xcdatamodel */,
+			);
+			currentVersion = 688201F429AEAA4600C02DDD /* VoiceCare.xcdatamodel */;
+			path = VoiceCare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 688201DD29AEAA4500C02DDD /* Project object */;
+}
