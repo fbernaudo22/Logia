@@ -10,25 +10,25 @@ import SwiftUI
 struct AddExerciseView: View {
     @EnvironmentObject var exercisesStore: ExercisesStore
     @State var name: String
-    let categories = ["breathing", "swallowing", "articulation", "muscleGymnastic"]
+    let categories = ["breathing", "swallowing", "articulation", "muscularGymnastics"]
     @State var category: String
     var body: some View {
         VStack{
             Form{
                 Section{
-                    TextField("Name", text: $name)
+                    TextField("name", text: $name)
                 }
                 Section{
-                    Picker("Category", selection: $category){
+                    Picker("category", selection: $category){
                         Text("breathing").tag("breathing")
                         Text("swallowing").tag("swallowing")
                         Text("articulation").tag("articulation")
-                        Text("muscleGymnastic")
-                            .tag("muscleGymnastic")
+                        Text("muscularGymnastics")
+                            .tag("muscularGymnastics")
                     }
                 }
             }
-                Button("Create", action: {exercisesStore.addNewExercise(exercise: name , category: category)})
+                Button("create", action: {exercisesStore.addNewExercise(exercise: name , category: category)})
                 .buttonStyle(.borderedProminent)
             .padding(.bottom, 20)
         }

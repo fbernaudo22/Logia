@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 enum ExerciseCategories {
-    case breathing, swallowing, articulation, muscleGymnastic
+    case breathing, swallowing, articulation, muscleGymnastics
 }
 
 class CategoryChoiceStore: ObservableObject {

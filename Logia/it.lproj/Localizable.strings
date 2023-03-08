@@ -26,3 +26,9 @@
 "injury" = "Lesione";
 "dysphonia" = "Disfonia";
 "insert" = "Inserisci";
+"breathing" = "Respirazione";
+"swallowing" = "Deglutizione";
+"articulation" = "Articolazione";
+"muscularGymnastics" = "Ginnastica Muscolare";
+"category" = "Categoria";
+"create" = "Crea";
