@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExercisesCategoryMenu: View {
     @EnvironmentObject var categoryChoiceStore: CategoryChoiceStore
-    let categories = ["breathing", "swallowing", "articulation", "muscleGymnastic"]
+    let categories = ["breathing", "swallowing", "articulation", "muscleGymnastics"]
     var body: some View {
         List{
             ForEach(categories, id: \.self){ category in
