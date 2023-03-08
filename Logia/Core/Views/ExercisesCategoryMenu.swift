@@ -16,7 +16,6 @@ struct ExercisesCategoryMenu: View {
                 Button(action: {categoryChoiceStore.CategoryChoice = category}, label: {CategoryRowView(exercise: category, color: category == categoryChoiceStore.CategoryChoice ? Color("RowSTextColor") : Color("RowTextColor"))})
                     .listRowBackground(categoryChoiceStore.CategoryChoice == category ? Color("RowSBGColor") : Color("RowBGColor"))
             }
-        }
     }
 }
 
