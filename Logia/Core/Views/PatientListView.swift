@@ -13,6 +13,7 @@ struct PatientListView: View {
     @EnvironmentObject var patientChoiceStore: PatientChoiceStore
     @State var patientToFind: String = ""
     let s = "ciao"
+    let s = "ci"
     var body: some View {
         NavigationStack{
             List{
