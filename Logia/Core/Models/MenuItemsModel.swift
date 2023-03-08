@@ -15,4 +15,4 @@ import SwiftUI
         var placeHolder: String
     }
     
-let categories = ["breathing", "swallowing", "articulation", "muscleGymnastics"]
+let categories = [String(localized: "breathing"), String(localized: "swallowing"), String(localized: "articulation"), String(localized: "muscularGymnastics")]

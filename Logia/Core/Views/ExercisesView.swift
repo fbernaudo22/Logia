@@ -17,7 +17,8 @@ struct ExercisesView: View {
         NavigationStack{
             List{
                 ForEach(exercisesStore.exercises, id: \.self){exercise in
-                    if exercise.category == categoryChoiceStore.CategoryChoice{
+                    if exercise.category == categoryChoiceStore.CategoryChoice
+                    {
                         NavigationLink(destination: WelcomeView(), label: {
                             ExerciseRowView(exercise: exercise.exercise ?? "", color: Color("RowTextColor"))})
                         //.listRowBackground( Color("RowBGColor"))

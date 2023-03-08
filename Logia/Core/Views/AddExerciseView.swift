@@ -10,7 +10,6 @@ import SwiftUI
 struct AddExerciseView: View {
     @EnvironmentObject var exercisesStore: ExercisesStore
     @State var name: String
-    let categories = ["breathing", "swallowing", "articulation", "muscularGymnastics"]
     @State var category: String
     var body: some View {
         VStack{
@@ -20,11 +19,11 @@ struct AddExerciseView: View {
                 }
                 Section{
                     Picker("category", selection: $category){
-                        Text("breathing").tag("breathing")
-                        Text("swallowing").tag("swallowing")
-                        Text("articulation").tag("articulation")
-                        Text("muscularGymnastics")
-                            .tag("muscularGymnastics")
+                        Text(categories[0]).tag(categories[0])
+                        Text(categories[1]).tag(categories[1])
+                        Text(categories[2]).tag(categories[2])
+                        Text(categories[3])
+                            .tag(categories[3])
                     }
                 }
             }

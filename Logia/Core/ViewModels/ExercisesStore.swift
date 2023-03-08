@@ -56,6 +56,6 @@ class ExercisesStore: ObservableObject {
     
     func saveChanges() {
         PersistenceController.shared.save()
-        self.fetchExercises()
+        fetchExercises()
         }
     }
