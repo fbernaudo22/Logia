@@ -28,6 +28,7 @@ struct SidebarView: View {
                     localized: "exercises"), imageName: "mic", color: sidebarChoiceStore.sidebarChoice == SidebarChoices.exercises ? Color("RowSTextColor") : Color("RowTextColor"))})
                 .listRowBackground(sidebarChoiceStore.sidebarChoice == SidebarChoices.exercises ? Color("RowSBGColor") : Color("RowBGColor"))
         }
+        .navigationTitle("Giulia Mennella")
     
             /*
             Section(header: Label("Tags", systemImage: "tag")){

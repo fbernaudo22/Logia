@@ -45,7 +45,7 @@ struct PatientsCollectionView: View {
                 .padding(.top, 30)
             }
             .toolbar{
-                Button("Delete", action: {patiensStoreModel.deleteAllPatient(patients: patiensStoreModel.patients)})
+                Button("delete", action: {patiensStoreModel.deleteAllPatient(patients: patiensStoreModel.patients)})
             }
             .navigationTitle("patients")
             
