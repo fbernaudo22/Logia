@@ -35,7 +35,6 @@ class PatientsStore: ObservableObject {
         newPatient.name = name
         newPatient.surname = surname
         saveChanges()
-        fetchPatients()
     }
     
     func updatePatientGeneralities(name: String, surname: String, age: String, address: String, phoneNumber: String, patient: Patient) {
@@ -45,25 +44,21 @@ class PatientsStore: ObservableObject {
         patient.address = address
         patient.phoneNumber = phoneNumber
         saveChanges()
-        fetchPatients()
     }
     
     func deletePatient(patient: Patient) {
         PersistenceController.shared.container.viewContext.delete(patient)
         saveChanges()
-        fetchPatients()
     }
     
     func deletePatientFromList(offsets: IndexSet) {
         offsets.map { patients[$0] }.forEach(PersistenceController.shared.container.viewContext.delete)
         saveChanges()
-        fetchPatients()
     }
     
     func deleteAllPatient(patients: [Patient]){
         for patient in patients {
             PersistenceController.shared.container.viewContext.delete(patient)
-            fetchPatients()
         }
     }
     
