@@ -11,6 +11,7 @@ struct ExercisesView: View {
     @EnvironmentObject var exerciseChoiceStore: ExerciseChoiceStore
     @EnvironmentObject var exercisesStore: ExercisesStore
     @EnvironmentObject var categoryChoiceStore: CategoryChoiceStore
+    @Environment(\.managedObjectContext) var managedObjectContext
     @State private var isShowingSheet: Bool = false
     var body: some View {
         NavigationStack{

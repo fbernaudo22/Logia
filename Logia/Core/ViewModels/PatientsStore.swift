@@ -69,5 +69,6 @@ class PatientsStore: ObservableObject {
     
     func saveChanges() {
         PersistenceController.shared.save()
+        fetchPatients()
         }
     }
