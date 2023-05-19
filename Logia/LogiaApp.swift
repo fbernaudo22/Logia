@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// this is a comment
 @main
 struct LogiaApp: App {
     let persistenceController = PersistenceController.shared
